@@ -31,11 +31,14 @@ nav a {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
 }
 
 .sidebar img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .main-content {
