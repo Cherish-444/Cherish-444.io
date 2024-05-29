@@ -1,7 +1,7 @@
 document.getElementById('search-form').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    const driverName = document.getElementById('driver-name').value.trim().toLowerCase();
+    const driverName = document.getElementById('name').value.trim().toLowerCase();
     const resultsSection = document.getElementById('results');
     const resultItems = resultsSection.getElementsByClassName('result-item');
     let found = false;
