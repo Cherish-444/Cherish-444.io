@@ -1,43 +1,86 @@
 <!DOCTYPE html>
+
 <head>
     <html lang="en">
-    <meta charset="UFT-8" />  
-    <title><Cherish-444 class="io"></Cherish-444></title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Homepage containing links to subpages.">
-    <meta name="author" content="Cherish Amadi">
+    <title>People Search</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
-            <h1>People Search</h1>
-            <nav>
-                <ul>
-                    <li><a href="#People Search">People</a></li>
-                    <li><a href="#Vehicles">Vehicles</a></li>
-                    <li><a href="#Add A New Vehicle">Add A New Vehicle</a></li>
-                </ul>
-            </nav>
+        <h1>People Search</h1>
+        <nav>
+            <a href="#people-search">People search</a>
+            <a href="#vehicle-search">Vehicle search</a>
+            <a href="#add-vehicle">Add a vehicle</a>
+        </nav>
     </header>
+
+    <!-- Main Content Section -->
     <main>
+        <form>
+            <label for="driver-name">Search by driver name</label>
+            <input type="text" id="driver-name" name="driver-name">
+
+            <label for="license-number">Search by driving license number</label>
+            <input type="text" id="license-number" name="license-number">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p>Search successful</p>
+
         <section id="results">
-                <div class="search-result">
-                    <p>Search Result.</p>
-                    <a href="link-to-full-result1.html">Read More</a>
-                </div>
-                <div class="search-result">
-                    <p>search-result.</p>
-                    <a href="link-to-full-result2.html">Read More</a>
-                </div>
-            </section>
-    
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section of the webpage.</p>
+            <div class="result-item">
+                <p>personid: 1</p>
+                <p>name: Rachel Smith</p>
+                <p>address: Wollaton</p>
+                <p>dob: 1979-06-05</p>
+                <p>licensenumber: SG345PQ</p>
+                <p>expirydate: 2020-05-05</p>
+            </div>
+            <div class="result-item">
+                <p>personid: 2</p>
+                <p>name: Lewis Thomson</p>
+                <p>address: Nottingham</p>
+                <p>dob: 1949-01-15</p>
+                <p>licensenumber: RW765FR</p>
+                <p>expirydate: 2018-03-25</p>
+            </div>
+            <div class="result-item">
+                <p>personid: 3</p>
+                <p>name: Oliver Reps</p>
+                <p>address: Nottingham</p>
+                <p>dob: 1976-10-05</p>
+                <p>licensenumber: JR123DE</p>
+                <p>expirydate: 2016-01-29</p>
+            </div>
+            <div class="result-item">
+                <p>personid: 4</p>
+                <p>name: Daphne Lai</p>
+                <p>address: Leicester</p>
+                <p>dob: 1980-08-13</p>
+                <p>licensenumber: DL890GB</p>
+                <p>expirydate: 2017-06-24</p>
+            </div>
+            <div class="result-item">
+                <p>personid: 5</p>
+                <p>name: Rachel Johnson</p>
+                <p>address: London</p>
+                <p>dob: 2000-01-01</p>
+                <p>licensenumber: JK239GB</p>
+                <p>expirydate: 2023-08-12</p>
+            </div>
         </section>
     </main>
 
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
 </body>
-</html>
 
+</html>
